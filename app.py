@@ -8,6 +8,7 @@ import os
 
 # Tell NLTK to use the local nltk_data folder
 nltk.data.path.append(os.path.join(os.path.dirname(__file__), "nltk_data"))
+nltk.download('punkt_tab')
 
 ps = PorterStemmer()
 
