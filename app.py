@@ -4,10 +4,10 @@ import string
 from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
+import os
 
-# Download necessary NLTK data
-nltk.download('punkt')
-nltk.download('stopwords')
+# Tell NLTK to use the local nltk_data folder
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), "nltk_data"))
 
 ps = PorterStemmer()
 
